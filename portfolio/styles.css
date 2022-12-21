@@ -34,6 +34,10 @@ nav {
   position: fixed;
   left: 40px;
   padding-right: 50px;
+  z-index: 1;
+}
+.sidemenu {
+  z-index: 1;
 }
 .logo {
   width: 140px;
@@ -101,7 +105,7 @@ nav ul li a:hover::after {
   flex-basis: 35%;
 }
 .about-col-1 img {
-  width: 100%;
+  width: 65%;
   border-radius: 15px;
 }
 .about-col-2 {
@@ -154,6 +158,8 @@ nav ul li a:hover::after {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  max-width: 300px;
+  height: auto;
 }
 .work img {
   width: 95%;
@@ -290,9 +296,22 @@ p {
   font-size: larger;
   color: rgb(0, 0, 0);
 }
+@media only screen and (max-width: 1440px) {
+  .work img {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .skills-container .skills-container-images figure {
     width: 24%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .work img {
+    width: 60%;
+    margin-left: 65px;
+    height: 40vh;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -331,7 +350,7 @@ p {
   .work img {
     width: 70%;
     margin-left: 65px;
-    height: 35vh;
+    height: 40vh;
   }
 }
 @media Only Screen and (max-width: 640px) {
@@ -383,6 +402,12 @@ p {
     width: 80%;
     margin-left: 33px;
     height: 40vh;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .work img {
+    width: 70%;
+    margin-left: 55px;
   }
 }
 @media only screen and (max-width: 320px) {
