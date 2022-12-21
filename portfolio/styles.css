@@ -105,7 +105,7 @@ nav ul li a:hover::after {
   flex-basis: 35%;
 }
 .about-col-1 img {
-  width: 65%;
+  width: 100%;
   border-radius: 15px;
 }
 .about-col-2 {
@@ -296,6 +296,16 @@ p {
   font-size: larger;
   color: rgb(0, 0, 0);
 }
+@media only screen and (max-width: 2560px) {
+  .work img {
+    width: 100%;
+    margin-left: 10px;
+  }
+  .about-col-1 img {
+    width: 80%;
+    border-radius: 15px;
+  }
+}
 @media only screen and (max-width: 1440px) {
   .work img {
     width: 100%;
@@ -309,9 +319,9 @@ p {
 }
 @media only screen and (max-width: 1024px) {
   .work img {
-    width: 60%;
+    width: 65%;
     margin-left: 65px;
-    height: 40vh;
+    height: 35vh;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -407,14 +417,11 @@ p {
 @media only screen and (max-width: 425px) {
   .work img {
     width: 70%;
-    margin-left: 55px;
+    margin-left: 20px;
   }
 }
 @media only screen and (max-width: 320px) {
   .skills-container .skills-container-images figure {
-    width: 90%;
-  }
-  #about {
-    height: 40%;
+    width: 99%;
   }
 }
